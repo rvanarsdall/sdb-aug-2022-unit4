@@ -7,7 +7,7 @@ let buttonGroup = document.getElementsByTagName("button");
 
 let form = document.querySelector("form");
 console.log(buttonGroup);
-
+console.log(form);
 firstNameInput.addEventListener("keyup", firstNameInputValidation);
 
 form.addEventListener("submit", submitForm);
@@ -16,6 +16,7 @@ buttonGroup[0].addEventListener("click", (e) => alert("Button was clicked"));
 
 function submitForm(event) {
   event.preventDefault();
+  console.log("form submitted");
 }
 
 function firstNameInputValidation(event) {

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>State Abbreviation</title>
+  </head>
+  <body>
+    <h2>
+      What is the abbreviation of <span id="current-state-question"></span>
+    </h2>
+    <h3>Use the Dropdown Menu</h3>
+    <p>
+      Make a selection and click the button to see if you matched the correct
+      abbreviation with the state.
+    </p>
+    <form>
+      <select id="abbreviations">
+        <option value="choose">Choose One</option>
+      </select>
+      <button onclick="validateCorrectAbbreviation(event)">Submit</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>

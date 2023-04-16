@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM - Example</title>
   </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+  </style>
   <body>
     <header>
       <h1 id="header">Document Object Model (DOM)</h1>
@@ -25,6 +34,52 @@
       <li class="error-list">Error Number 1</li>
       <li class="error-list">Error Number 2</li>
     </ul>
+
+    <table>
+      <tr>
+        <th>Method</th>
+        <th>Node List, HTML Collection, Element</th>
+        <th>Single or Multiple</th>
+        <th>Looping Through It</th>
+      </tr>
+      <tr>
+        <td>getElementByID()</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>getElementByClasName()</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>getElementByTagName()</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>querySelector()</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>querySelectorAll()</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <div onclick="alert('outer div')">
+      OUTER DIV
+      <div onclick="alert('inner div'); event.stopPropagation()">
+        INNER DIV
+        <p onclick="alert('paragraph'); ">Paragraph</p>
+      </div>
+    </div>
     <script>
       console.log("It Worked");
     </script>

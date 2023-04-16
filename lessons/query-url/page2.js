@@ -9,6 +9,4 @@ console.log(firstName);
 let greeting = document.getElementById("greeting");
 
 let product = urlParams.get("product");
-greeting.innerText = `Hello ${firstName}, did you order ${product}`;
-
-console.log(myName);
+greeting.innerText = `Hello ${firstName}, did you order ${product}?`;
