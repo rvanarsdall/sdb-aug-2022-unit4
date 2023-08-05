@@ -13,11 +13,11 @@ function formSubmit(event) {
   event.preventDefault();
   console.log(+input1.value);
 
-  let total = addNumbers(parseInt(input1.value), Number(input2.value));
+  if (isNaN(input1.value) || isNaN(input2.value)) {
+    return alert("Can not calculate: validate you have numbers submitted");
+  }
+
+  let total = parseInt(input1.value) + Number(input2.value);
   //   alert(`The total is: ${total}`);
   totalDisplay.innerText = total.toString();
-}
-
-function addNumbers(num1, num2) {
-  return num1 + num2;
 }

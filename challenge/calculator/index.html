@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculator</title>
   </head>
   <body>
-    <form>
-      <label for="number1">Number 1</label>
-      <input type="text" id="number1" />
-      <label for="number2">Number 2</label>
-      <input type="text" id="number2" />
-      <button>Calculate</button>
-    </form>
+    <div style="max-width: 400px; text-align: right">
+      <form>
+        <label for="number1">Type in the first number:</label>
+        <input type="text" id="number1" />
+        <br />
+        <label for="number2">Type in the second number:</label>
+        <input type="text" id="number2" />
+        <br />
+        <button type="submit">Calculate</button>
+      </form>
+    </div>
     <p>The total is <span id="total">[test]</span></p>
     <script src="./index.js"></script>
   </body>
